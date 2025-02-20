@@ -1,0 +1,9 @@
+image: alpine:latest
+container_name: my_alpine_container
+volumes:
+- //c/Users/AIR/pengweideku/Q1/2024212682彭威：/container/path
+ports:
+  - "8080:80"
+environment:
+  - ENV_VAR=value
+auto_update: true
