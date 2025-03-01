@@ -27,7 +27,7 @@
 ### 1. 执行权限
 ```bash
 sudo chmod +x network_config.sh
-sudo ./network_config.sh
+sudo ./yunweitask.sh
 ```
 
 ### 2. 日志查看
