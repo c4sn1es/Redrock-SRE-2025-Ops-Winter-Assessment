@@ -1,5 +1,5 @@
 #!/bin/bash
-LOG_FILE="/var/log/network_configuration.log"
+LOG_FILE="Users/AIR/var/network_configuration.log"
 log_message() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" | tee -a "$LOG_FILE"
 }
