@@ -86,6 +86,14 @@ void schedule_image_update(ContainerConfig* config, const char* filename);
   2. 若发现更新，修改配置文件中的镜像标签为 `latest`。
   3. 覆盖原配置文件并更新结构体数据。
 
+####  （5）`main`函数
+-**功能**：
+  1.初始化 ContainerConfig 结构体。
+  2.调用 parse_yaml 函数解析配置文件。
+  3.调用 start_container 函数启动容器。
+  4.如果启用了自动更新，调用 schedule_image_update 函数开始定时检查。
+  5.调用 stop_container 函数停止容器。
+  6.释放 ContainerConfig 结构体中动态分配的内存。
 ---
 
 ## 功能模块
